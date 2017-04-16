@@ -32,7 +32,10 @@ namespace MvcMovie
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication();
+            app.UseGoogleAuthentication(
+                  clientId: "905741502928-pbtucah0s9a3l8to4not325b7tn8s7s6.apps.googleusercontent.com",
+                   clientSecret: "lwZ1Uf7IOvrCuRYzHsGRwg5F"
+               );
         }
     }
 }

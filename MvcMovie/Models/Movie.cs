@@ -28,16 +28,19 @@ namespace MvcMovie.Models
         [RegularExpression(@"^[A-Z]+[a-zA-Z''-'\s]*$")]
         [StringLength(5)]
         public string Rating { get; set; }
+
+        [StringLength(255)]
+        public string movieImage { get; set; }
     }
 
-    public class MovieDBContext : DbContext
-    {
-        public MovieDBContext()
-        {
-            Database.SetInitializer<MovieDBContext>
-                (new MigrateDatabaseToLatestVersion<MovieDBContext,
-                    MvcMovie.Migrations.Configuration>());
-        }
-        public DbSet<Movie> Movies { get; set; }
-    }
+    //public class MovieDBContext : DbContext
+    //{
+    //    public MovieDBContext()
+    //    {
+    //        Database.SetInitializer<MovieDBContext>
+    //            (new MigrateDatabaseToLatestVersion<MovieDBContext,
+    //                MvcMovie.Migrations.Configuration>());
+    //    }
+    //    public DbSet<Movie> Movies { get; set; }
+    //}
 }
