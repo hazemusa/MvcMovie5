@@ -398,12 +398,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="obj\Debug\MvcMovie.Migrations.Initial.resources" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Documents\Visual Studio 2015\Team 3\Main 2017\MovieStore\MvcMovieApplication\MvcMovieApplication.csproj">
-      <Project>{C7F8EAE4-AAE5-41B6-89CF-C1708A90F200}</Project>
-      <Name>MvcMovieApplication</Name>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
